@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Student Enrollment Form</h1>
+    </div>
+    <div class="main">
+        <div class="left">
+            <form class="enrollment">
+                <label for="Name">Name: </label>
+                <input type="text" id="Name"  name="Name" autocomplete="off"/>
+
+                <label for="Email">Email: </label>
+                <input type="Email" id="Email" name="Email" autocomplete="off"/>
+
+                <label for="website">LinkedIn profile: </label>
+                <input type="text" id="website" name="website" autocomplete="off"/>
+
+                <label for="Image">Image: </label>
+                <input type="file" id="Image" name="Image" class="input-file" onchange="image(event)" />
+
+                <label for="Gender" class="gender">
+                    <p>Gender: </p>
+                    <input type="radio" name="Gender" id="Male" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="Gender" id="Female" value="Female">
+                    <label for="Female">Female</label>
+                </label>
+                <label for="Skills" class="skills">
+                    <p>Skills: </p>
+                    <input type="checkbox" id="html" value="HTML">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="css" value="CSS">
+                    <label for="css">CSS</label>
+
+                    <input type="checkbox" id="Javascript" value="Javascript">
+                    <label for="js">Javascript</label>
+
+                    <input type="checkbox" id="communication" value="communication skills">
+                    <label for="communication">Communication skills</label>
+                </label>
+                <div class="btn">
+            
+                    <button type="button" id="btn" class="button">Enroll Student</button>
+                    <button type="reset" id="resetbtn" class="button">Reset</button>
+
+                </div>
+            </form>
+        </div>
+        <div class="line"></div>
+        <div class="right">
+            <h1 class="Enrolled">Enrolled Students</h1>
+            <div class="cards" id="cards"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

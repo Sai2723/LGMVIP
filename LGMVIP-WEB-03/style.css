@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: content-box;
+
+}
+
+body {
+  background-color:gainsboro;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading h1 {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color:aliceblue;
+  text-align: center;
+  margin: 20px 0 20px 0;
+  font-size: 40px;
+  width:100%;
+}
+
+.enrollment {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+  padding: 10px;
+  
+}
+
+.enrollment input {
+  padding: 10px;
+
+  margin: 15px 10px;
+  margin-right: 100px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.custom-file-input::before {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 12px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+
+}
+
+label {
+  font-size: 18px;
+  color: black;
+}
+
+.name {
+  display: flex;
+}
+
+.input-file::-webkit-file-upload-button {
+  visibility: visible;
+}
+
+.gender,
+.skills {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+p {
+  margin-right: 10px;
+}
+
+input[type=radio],
+input[ type=checkbox] {
+  transform: scale(1.3);
+  margin: 10px 10px;
+}
+
+.skills>label,
+.gender>label {
+  padding: 0px 10px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 20px;
+  width: 25%;
+  text-align: center;
+  padding: 10px;
+  color: rgb(245, 245, 245);
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+}
+.main {
+  display: flex;
+}
+.left {
+  width: 50%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.line {
+  border-left: 2px solid rgb(23, 20, 20);
+}
+
+.Enrolled {
+  margin-top: 2rem;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  border-radius: 3%;
+  border: 2px solid rgb(23, 20, 20);
+  padding: 20px 30px;
+  text-align: center;
+  background-color: rgb(252, 246, 246);
+
+}
+
+input,
+p.text {
+  color: black;
+  text-align: left;
+
+}
+
+.image img {
+  width: 180px;
+  margin: 10px;
+}
+
+.text {
+  margin: 10px;
+}
